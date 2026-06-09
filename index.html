@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aarav Sharma — Grade 8 GEMMA Club Student Portfolio. International medal-winning student from Sunrise International School, New Delhi. Achievements in Abacus, Mathematics, Coding, Science, and Public Speaking." />
+  <meta name="keywords" content="Aarav Sharma, GEMMA Club, student portfolio, abacus, mathematics, coding, New Delhi" />
+  <meta property="og:title" content="Aarav Sharma | Student Portfolio" />
+  <meta property="og:description" content="Grade 8 GEMMA Club student | International medal winner | Future Aerospace Engineer" />
+  <title>Aarav Sharma | GEMMA Club Student Portfolio</title>
+
+  <!-- Preload Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&family=Lora:ital@1&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container navbar-inner">
+    <!-- Logo -->
+    <a href="#home" class="nav-logo" aria-label="Aarav Sharma Home">
+      <div class="logo-monogram" aria-hidden="true">AS</div>
+      <span class="logo-name">Aarav Sharma</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <div class="nav-links navbar__links" role="list">
+      <a href="#home"         class="nav-link active" role="listitem">Home</a>
+      <a href="#about"        class="nav-link" role="listitem">About</a>
+      <a href="#academics"    class="nav-link" role="listitem">Academics</a>
+      <a href="#clubs"        class="nav-link" role="listitem">Club Life</a>
+      <a href="#achievements" class="nav-link" role="listitem">Achievements</a>
+      <a href="#projects"     class="nav-link" role="listitem">Projects</a>
+      <a href="#gallery"      class="nav-link" role="listitem">Gallery</a>
+      <a href="#skills"       class="nav-link" role="listitem">Skills</a>
+      <a href="#blog"         class="nav-link" role="listitem">Blog</a>
+      <a href="#testimonials" class="nav-link" role="listitem">Testimonials</a>
+      <a href="#contact"      class="nav-link" role="listitem">Contact</a>
+    </div>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="assets/aarav-sharma-cv.pdf" class="btn btn-outline btn-sm" download aria-label="Download CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+  <a href="#home"         class="nav-link">Home</a>
+  <a href="#about"        class="nav-link">About</a>
+  <a href="#academics"    class="nav-link">Academics</a>
+  <a href="#clubs"        class="nav-link">Club Life</a>
+  <a href="#achievements" class="nav-link">Achievements</a>
+  <a href="#projects"     class="nav-link">Projects</a>
+  <a href="#gallery"      class="nav-link">Gallery</a>
+  <a href="#skills"       class="nav-link">Skills</a>
+  <a href="#blog"         class="nav-link">Blog</a>
+  <a href="#testimonials" class="nav-link">Testimonials</a>
+  <a href="#contact"      class="nav-link">Contact</a>
+  <a href="assets/aarav-sharma-cv.pdf" class="btn btn-primary" download>Download CV</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════════ -->
+<main>
+<section class="hero" id="home" aria-label="Hero">
+  <div class="container">
+    <div class="hero-inner hero__grid">
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-badge hero-badge-pill" aria-label="GEMMA Club Student badge">
+          🎓 GEMMA Club Student
+        </div>
+
+        <h1 class="hero-title">
+          <span id="typewriter-intro">Hi, I'm</span><br />
+          <span class="gradient-text" id="typewriter-name">Aarav Sharma</span><span class="typewriter-cursor" id="typewriter-cursor">|</span>
+        </h1>
+
+        <p class="hero-subtitle hero__subtitle">Grade 8 · Sunrise International School, New Delhi</p>
+
+        <p class="hero-bio hero__bio">
+          I am passionate about mathematics, coding, public speaking, and scientific innovation. Through GEMMA Clubs, I continuously develop my skills and participate in national and international competitions. My goal is to become an Aerospace Engineer and contribute to India's space programme.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#achievements" class="btn btn-primary" id="btn-view-achievements">
+            View Achievements
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="assets/aarav-sharma-cv.pdf" class="btn btn-outline" id="btn-download-resume" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Stat Counters -->
+        <div class="hero-stats stats-grid" id="hero-stats">
+          <div class="stat-card animate-on-scroll" id="stat-competitions" data-target="12" data-suffix="+" aria-label="12+ Competitions Entered">
+            <span class="stat-icon" aria-hidden="true">🏆</span>
+            <span class="stat-number" aria-live="polite">0+</span>
+            <span class="stat-label">Competitions</span>
+          </div>
+          <div class="stat-card animate-on-scroll" data-target="6" data-suffix="" aria-label="6 Medals Won">
+            <span class="stat-icon" aria-hidden="true">🥇</span>
+            <span class="stat-number" aria-live="polite">0</span>
+            <span class="stat-label">Medals Won</span>
+          </div>
+          <div class="stat-card animate-on-scroll" data-target="8" data-suffix="" aria-label="8 Projects Built">
+            <span class="stat-icon" aria-hidden="true">🚀</span>
+            <span class="stat-number" aria-live="polite">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card animate-on-scroll" data-target="5" data-suffix="" aria-label="5 Clubs Joined">
+            <span class="stat-icon" aria-hidden="true">⭐</span>
+            <span class="stat-number" aria-live="polite">0</span>
+            <span class="stat-label">Clubs Joined</span>
+          </div>
+        </div>
+
+        <!-- About Teaser -->
+        <div class="hero-about animate-on-scroll">
+          <h3>About Me</h3>
+          <p>I believe every equation solved and every line of code written brings me closer to my dream of exploring the cosmos. I thrive in competitive environments and love leading teams. Outside academics, I enjoy chess, robotics, and building projects that solve real-world problems.</p>
+          <a href="#about">Read more about me →</a>
+        </div>
+      </div>
+
+      <!-- Hero Photo -->
+      <div class="hero-photo">
+        <div class="photo-wrapper">
+          <div class="photo-ring-container" aria-hidden="true"></div>
+          <img
+            src="https://ui-avatars.com/api/?name=Aarav+Sharma&size=600&background=3D3BF3&color=fff&bold=true&rounded=true&font-size=0.33"
+            alt="Aarav Sharma — Grade 8 GEMMA Club Student"
+            class="photo-img hero__avatar"
+            id="hero-avatar"
+            width="300"
+            height="300"
+            loading="eager"
+          />
+          <div class="photo-pulse" aria-hidden="true"></div>
+
+          <!-- Floating Badges -->
+          <div class="photo-badge photo-badge-1" aria-hidden="true">
+            🥇 Gold Medal 2024
+          </div>
+          <div class="photo-badge photo-badge-2" aria-hidden="true">
+            📍 New Delhi, India
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section section-alt" id="about" aria-label="About Aarav Sharma">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel section-title">👤 About Me</div>
+      <h2>About Me — The Student Behind the Medals</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">A curious mind, a determined spirit, and an unending passion for learning.</p>
+    </header>
+
+    <div class="about-grid">
+      <!-- Profile Card -->
+      <div class="profile-card animate-from-left">
+        <div class="profile-card-top">
+          <img
+            src="https://ui-avatars.com/api/?name=Aarav+Sharma&size=200&background=ffffff&color=3D3BF3&bold=true&rounded=true"
+            alt="Aarav Sharma profile photo"
+            class="profile-photo"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+          <h3>Aarav Sharma</h3>
+          <p>Grade 8 Student</p>
+          <div class="school-badge">🏫 Sunrise International School</div>
+        </div>
+
+        <div class="profile-info">
+          <div class="info-row">
+            <span class="info-label">Full Name</span>
+            <span class="info-value">Aarav Sharma</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Date of Birth</span>
+            <span class="info-value">March 14, 2011</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Grade</span>
+            <span class="info-value">Grade 8 (Class VIII)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">School</span>
+            <span class="info-value">Sunrise International School</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">City</span>
+            <span class="info-value">New Delhi, India</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Career Goal</span>
+            <span class="info-value gradient-text" style="font-weight:700;">Aerospace Engineer 🚀</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Right -->
+      <div class="about-right animate-from-right">
+        <h3 style="margin-bottom:var(--sp-md);">Career Aspirations</h3>
+        <p class="career-text">
+          From a young age, I have been fascinated by the sky — how aeroplanes defy gravity, how satellites orbit Earth, and how rockets punch through the atmosphere into the vast unknown. My dream is to become an <strong>Aerospace Engineer</strong> and contribute to India's growing space programme.
+        </p>
+        <p class="career-text">
+          I am particularly inspired by ISRO's achievements — from Chandrayaan to Mangalyaan — and I aspire to one day work on systems that push the frontiers of human exploration. Every subject I study, from mathematics to computer science, is a step toward that goal. I believe that the combination of analytical thinking, creative problem-solving, and resilience will take me to the stars.
+        </p>
+
+        <blockquote class="about-quote">
+          Every equation I solve and every line of code I write brings me one step closer to the stars.
+        </blockquote>
+
+        <div class="hobby-pills">
+          <p class="hobbies-title">Hobbies &amp; Interests</p>
+          <div class="hobbies-grid">
+            <span class="hobby-pill badge">🧮 Mental Arithmetic</span>
+            <span class="hobby-pill badge">💻 Coding &amp; Scratch</span>
+            <span class="hobby-pill badge">🤖 Robotics</span>
+            <span class="hobby-pill badge">🎤 Public Speaking</span>
+            <span class="hobby-pill badge">♟️ Chess</span>
+            <span class="hobby-pill badge">🔬 Science Experiments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     VIDEO INTRODUCTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="video-intro" aria-label="Video Introduction">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">🎬 Introduction</div>
+      <h2>Watch My Introduction</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Get to know Aarav Sharma — GEMMA Club student, medal winner, and future aerospace engineer.</p>
+    </header>
+
+    <!-- YouTube Thumbnail Card — works on file:// and hosted -->
+    <div class="animate-on-scroll" style="max-width:800px;margin:0 auto;">
+      <a
+        id="intro-video"
+        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Watch Aarav Sharma's introduction video on YouTube"
+        style="display:block;position:relative;border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow-card-hover);text-decoration:none;cursor:pointer;"
+      >
+        <!-- YouTube HD thumbnail -->
+        <img
+          src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+          alt="Aarav Sharma — Student Introduction Video"
+          onerror="this.src='https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg'"
+          style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;"
+          loading="lazy"
+        />
+
+        <!-- Play button overlay -->
+        <div style="
+          position:absolute;inset:0;
+          display:flex;flex-direction:column;
+          align-items:center;justify-content:center;
+          background:linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+          transition:background 0.3s ease;
+        " class="yt-overlay">
+          <!-- YouTube-style play button -->
+          <div style="
+            width:72px;height:52px;
+            background:rgba(255,0,0,0.9);
+            border-radius:14px;
+            display:flex;align-items:center;justify-content:center;
+            box-shadow:0 4px 20px rgba(0,0,0,0.4);
+            transition:transform 0.2s ease, background 0.2s ease;
+          " class="yt-play-btn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <p style="color:#fff;font-family:var(--font-display);font-size:1rem;font-weight:600;margin-top:14px;text-shadow:0 1px 4px rgba(0,0,0,0.6);">
+            ▶ Watch on YouTube
+          </p>
+        </div>
+      </a>
+
+      <!-- Caption bar below -->
+      <div style="padding:var(--sp-md) var(--sp-lg);background:var(--color-surface);border:1px solid var(--color-border);border-top:none;border-radius:0 0 var(--radius-card) var(--radius-card);">
+        <p style="font-size:var(--text-sm);color:var(--color-text-secondary);text-align:center;margin:0;">
+          🎓 Aarav Sharma · Grade 8 GEMMA Club Student · Sunrise International School, New Delhi
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     ACADEMICS SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="academics" aria-label="Academic Performance">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">📚 Academics</div>
+      <h2>Academic Excellence</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Consistently ranked in the top 5% of class — Academic Year 2023–24.</p>
+    </header>
+
+    <div class="academics-table-wrap animate-on-scroll">
+      <table class="grades-table" aria-label="Academic grades for 2023-24">
+        <thead>
+          <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Percentage</th>
+            <th scope="col">Performance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mathematics</strong></td>
+            <td><span class="grade-badge">A+</span></td>
+            <td>98%</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar skill-fill" data-value="98%" style="width:98%"></div></div></td>
+          </tr>
+          <tr>
+            <td><strong>Computer Science</strong></td>
+            <td><span class="grade-badge">A+</span></td>
+            <td>97%</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar skill-fill" data-value="97%" style="width:97%"></div></div></td>
+          </tr>
+          <tr>
+            <td><strong>Science</strong></td>
+            <td><span class="grade-badge">A</span></td>
+            <td>92%</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar skill-fill" data-value="92%" style="width:92%"></div></div></td>
+          </tr>
+          <tr>
+            <td><strong>Hindi</strong></td>
+            <td><span class="grade-badge">A</span></td>
+            <td>91%</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar skill-fill" data-value="91%" style="width:91%"></div></div></td>
+          </tr>
+          <tr>
+            <td><strong>English</strong></td>
+            <td><span class="grade-badge">A</span></td>
+            <td>90%</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar skill-fill" data-value="90%" style="width:90%"></div></div></td>
+          </tr>
+          <tr>
+            <td><strong>Social Studies</strong></td>
+            <td><span class="grade-badge" style="background:linear-gradient(135deg,#06B6D4,#3D3BF3)">B+</span></td>
+            <td>85%</td>
+            <td><div class="mini-bar-wrap"><div class="mini-bar skill-fill" data-value="85%" style="width:85%"></div></div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="overall-badge">
+        <div class="overall-pill">
+          🎓 Overall: 92.2% &nbsp;·&nbsp; Top 5% of Class
+        </div>
+        <p class="overall-note">Academic Year 2023–24 · Sunrise International School, New Delhi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     GEMMA CLUBS SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section section-alt" id="clubs" aria-label="GEMMA Club Participation">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">🏛️ Club Life</div>
+      <h2>GEMMA Club Participation</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Five clubs, countless lessons — developing skills that classrooms alone cannot teach.</p>
+    </header>
+
+    <div class="grid-3 clubs-grid" role="list">
+
+      <!-- Abacus Club -->
+      <article class="club-card animate-on-scroll" role="listitem">
+        <div class="club-header club-card__header">
+          <div class="icon-box" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="16" y2="21"/><line x1="2" y1="9" x2="8" y2="9"/><line x1="16" y1="9" x2="22" y2="9"/><line x1="2" y1="15" x2="8" y2="15"/><line x1="16" y1="15" x2="22" y2="15"/></svg>
+          </div>
+          <div style="flex:1">
+            <h3>Abacus Club</h3>
+          </div>
+          <span class="badge badge-primary">2 Years</span>
+        </div>
+        <ul class="club-highlights club-card__highlights">
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            State-level finalist — International Abacus Olympiad
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Abacus Level 5 certified — top certification tier
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Gold Medal — International Abacus Olympiad 2024
+          </li>
+        </ul>
+      </article>
+
+      <!-- Mathematics Club -->
+      <article class="club-card animate-on-scroll" role="listitem">
+        <div class="club-header club-card__header">
+          <div class="icon-box" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+          </div>
+          <div style="flex:1">
+            <h3>Mathematics Club</h3>
+          </div>
+          <span class="badge badge-secondary">2 Years</span>
+        </div>
+        <ul class="club-highlights club-card__highlights">
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Inter-school mathematics quiz champion
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            1st Place — Inter-School Mathematics Olympiad 2024
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Member of the school mathematics olympiad team
+          </li>
+        </ul>
+      </article>
+
+      <!-- Coding Club -->
+      <article class="club-card animate-on-scroll" role="listitem">
+        <div class="club-header club-card__header">
+          <div class="icon-box" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div style="flex:1">
+            <h3>Coding Club</h3>
+          </div>
+          <span class="badge badge-accent">1.5 Years</span>
+        </div>
+        <ul class="club-highlights club-card__highlights">
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Built 5 Scratch projects — 200+ combined plays
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            National Scratch Coding Challenge — Top 10
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Built HTML &amp; CSS websites as extended projects
+          </li>
+        </ul>
+      </article>
+
+      <!-- Public Speaking Club -->
+      <article class="club-card animate-on-scroll" role="listitem">
+        <div class="club-header club-card__header">
+          <div class="icon-box" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+          <div style="flex:1">
+            <h3>Public Speaking Club</h3>
+          </div>
+          <span class="badge badge-amber">1 Year</span>
+        </div>
+        <ul class="club-highlights club-card__highlights">
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            District-level finalist — Public Speaking competition
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Bronze Medal — International Student Speaker Competition
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Delivered a TED-style talk on Climate Change
+          </li>
+        </ul>
+      </article>
+
+      <!-- Science Club -->
+      <article class="club-card animate-on-scroll" role="listitem">
+        <div class="club-header club-card__header">
+          <div class="icon-box" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          </div>
+          <div style="flex:1">
+            <h3>Science Club</h3>
+          </div>
+          <span class="badge badge-success">1 Year</span>
+        </div>
+        <ul class="club-highlights club-card__highlights">
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            School Innovation Award winner 2024
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Young Scientist Award — National Top 20 Finalist
+          </li>
+          <li class="club-highlight-item">
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Built Smart Irrigation System using Arduino &amp; IoT
+          </li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     ACHIEVEMENTS TIMELINE
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="achievements" aria-label="Competition Achievements">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">🏅 Achievements</div>
+      <h2>Competition Achievements</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">From national stages to international arenas — a journey of excellence.</p>
+    </header>
+
+    <div class="timeline" role="list" aria-label="Achievement timeline">
+
+      <!-- Item 1: Gold -->
+      <div class="timeline-item timeline-item-left" role="listitem">
+        <div class="timeline-card animate-from-left">
+          <span class="timeline-year">2024</span>
+          <h3>International Abacus Olympiad</h3>
+          <p>Competed against students from 30+ countries in mental arithmetic speed tests and complex calculations.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-gold">🥇 Gold Medal</span>
+            <span class="timeline-level">🌍 International</span>
+          </div>
+        </div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-spacer"></div>
+      </div>
+
+      <!-- Item 2: State 1st -->
+      <div class="timeline-item timeline-item-right" role="listitem">
+        <div class="timeline-spacer"></div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-card animate-from-right">
+          <span class="timeline-year">2024</span>
+          <h3>Inter-School Mathematics Olympiad</h3>
+          <p>Represented Sunrise International School in the state-level mathematics competition, topping the leaderboard.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-gold">🥇 1st Place</span>
+            <span class="timeline-level">🏛️ State Level</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Young Scientist -->
+      <div class="timeline-item timeline-item-left" role="listitem">
+        <div class="timeline-card animate-from-left">
+          <span class="timeline-year">2024</span>
+          <h3>Young Scientist Award</h3>
+          <p>Selected among the Top 20 nationally for the innovative Smart Irrigation System project using Arduino IoT.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-finalist">🔬 Top 20 Finalist</span>
+            <span class="timeline-level">🇮🇳 National</span>
+          </div>
+        </div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-spacer"></div>
+      </div>
+
+      <!-- Item 4: Silver -->
+      <div class="timeline-item timeline-item-right" role="listitem">
+        <div class="timeline-spacer"></div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-card animate-from-right">
+          <span class="timeline-year">2023</span>
+          <h3>International Essay Writing Competition</h3>
+          <p>Wrote a compelling essay on sustainable development, judged by an international panel of educators.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-silver">🥈 Silver Medal</span>
+            <span class="timeline-level">🌍 International</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5: Bronze -->
+      <div class="timeline-item timeline-item-left" role="listitem">
+        <div class="timeline-card animate-from-left">
+          <span class="timeline-year">2023</span>
+          <h3>International Student Speaker Competition</h3>
+          <p>Delivered a powerful speech on climate change to an audience of 200 participants from 14 countries.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-bronze">🥉 Bronze Medal</span>
+            <span class="timeline-level">🌍 International</span>
+          </div>
+        </div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-spacer"></div>
+      </div>
+
+      <!-- Item 6: Scratch Coding -->
+      <div class="timeline-item timeline-item-right" role="listitem">
+        <div class="timeline-spacer"></div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-card animate-from-right">
+          <span class="timeline-year">2023</span>
+          <h3>Scratch Coding Challenge</h3>
+          <p>Entered the national coding challenge with Temple Adventure game, making it into the Top 10 finalists.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-finalist">💻 Top 10</span>
+            <span class="timeline-level">🇮🇳 National</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 7: Painting -->
+      <div class="timeline-item timeline-item-left" role="listitem">
+        <div class="timeline-card animate-from-left">
+          <span class="timeline-year">2022</span>
+          <h3>International Painting Olympics</h3>
+          <p>Participated in the international painting competition, creating artwork on the theme of environmental conservation.</p>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <span class="badge badge-participation">🎨 Participation</span>
+            <span class="timeline-level">🌍 International</span>
+          </div>
+        </div>
+        <div class="timeline-dot-col">
+          <div class="timeline-dot" aria-hidden="true"></div>
+        </div>
+        <div class="timeline-spacer"></div>
+      </div>
+
+    </div><!-- /timeline -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJECTS SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section section-alt" id="projects" aria-label="Project Showcase">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">🛠️ Projects</div>
+      <h2>Project Showcase</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Real-world problem solving — from soil sensors to full websites.</p>
+    </header>
+
+    <div class="grid-2 projects-grid" role="list">
+
+      <!-- Project 1 -->
+      <article class="project-card animate-on-scroll" role="listitem">
+        <div class="project-thumbnail project-card__thumb" style="background:linear-gradient(135deg,#06B6D4,#10B981);" aria-hidden="true">
+          <span class="project-thumbnail-text">💧 SIS</span>
+        </div>
+        <div class="project-body">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge badge-accent">Science / IoT</span>
+            <span class="badge badge-amber">🏆 Award Winner</span>
+          </div>
+          <h3>Smart Irrigation System</h3>
+          <p class="project-desc">An automated plant watering system using soil moisture sensors connected to a microcontroller. Waters plants only when soil is dry, reducing water waste by 40%. Selected for Young Scientist Award 2024.</p>
+          <div class="tech-pills">
+            <span class="tech-pill">Arduino</span>
+            <span class="tech-pill">Soil Sensor</span>
+            <span class="tech-pill">Relay Module</span>
+            <span class="tech-pill">C++</span>
+          </div>
+          <span class="badge badge-success" style="width:fit-content;">✅ Completed</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-amber">🏅 School Innovation Award 2024</span>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card animate-on-scroll" role="listitem">
+        <div class="project-thumbnail project-card__thumb" style="background:linear-gradient(135deg,#7C3AED,#3D3BF3);" aria-hidden="true">
+          <span class="project-thumbnail-text">🎮 TA</span>
+        </div>
+        <div class="project-body">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge badge-secondary">Coding / Game</span>
+            <span class="badge badge-success">Published</span>
+          </div>
+          <h3>Temple Adventure — Scratch Game</h3>
+          <p class="project-desc">A 3-level platformer game built entirely in Scratch featuring custom sprites, sound effects, a scoring system, and a lives counter. Over 200 plays on the Scratch community platform.</p>
+          <div class="tech-pills">
+            <span class="tech-pill">MIT Scratch</span>
+            <span class="tech-pill">Game Design</span>
+            <span class="tech-pill">Sprites</span>
+          </div>
+          <span class="badge badge-success" style="width:fit-content;">🌐 Published</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://scratch.mit.edu" class="btn btn-outline btn-sm" target="_blank" rel="noopener">View on Scratch →</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card animate-on-scroll" role="listitem">
+        <div class="project-thumbnail project-card__thumb" style="background:linear-gradient(135deg,#3D3BF3,#06B6D4);" aria-hidden="true">
+          <span class="project-thumbnail-text">🌍 CCW</span>
+        </div>
+        <div class="project-body">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge badge-primary">Web Development</span>
+            <span class="badge badge-amber">🏆 Best Project</span>
+          </div>
+          <h3>Climate Change Awareness Website</h3>
+          <p class="project-desc">A 5-page HTML &amp; CSS website created to educate students about climate change. Includes facts, infographics, an interactive quiz section, and a pledge wall. Won Best Student Project on Environment Day 2023.</p>
+          <div class="tech-pills">
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <span class="badge badge-success" style="width:fit-content;">✅ Completed</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-amber">🏅 Best Student Project, Environment Day 2023</span>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card animate-on-scroll" role="listitem">
+        <div class="project-thumbnail project-card__thumb" style="background:linear-gradient(135deg,#F59E0B,#EF4444);" aria-hidden="true">
+          <span class="project-thumbnail-text">📱 ALA</span>
+        </div>
+        <div class="project-body">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span class="badge badge-amber">App Design</span>
+            <span class="badge badge-secondary">In Progress</span>
+          </div>
+          <h3>Abacus Learning App — Wireframe</h3>
+          <p class="project-desc">A wireframe prototype for a mobile app that teaches abacus techniques to beginners through interactive exercises, animated bead movements, and a progress tracking dashboard.</p>
+          <div class="tech-pills">
+            <span class="tech-pill">Canva</span>
+            <span class="tech-pill">Figma</span>
+            <span class="tech-pill">UX Design</span>
+          </div>
+          <span class="badge badge-secondary" style="width:fit-content;">🔄 In Progress</span>
+        </div>
+        <div class="project-footer">
+          <span style="font-size:var(--text-caption);color:var(--color-text-muted);">Expected completion: 2025</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     GALLERY SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="gallery" aria-label="Certificates Gallery">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">🖼️ Gallery</div>
+      <h2>Certificates &amp; Awards Gallery</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Click any certificate to view it in full. Use arrow keys or buttons to navigate.</p>
+    </header>
+
+    <div class="gallery-grid" role="list" aria-label="Certificate gallery">
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Gold Medal Certificate — International Abacus Olympiad 2024" data-caption="Gold Medal Certificate — International Abacus Olympiad 2024">
+        <div class="cert-card" style="background:linear-gradient(135deg,#F59E0B,#EF4444);">
+          <div class="cert-medal" aria-hidden="true">🥇</div>
+          <div class="cert-title cert-card__title">Gold Medal Certificate</div>
+          <div class="cert-subtitle">International Abacus Olympiad</div>
+          <div class="cert-year">2024</div>
+          <div class="cert-seal" aria-hidden="true">🏆</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Silver Medal Certificate — Essay Writing Competition 2023" data-caption="Silver Medal Certificate — International Essay Writing Competition 2023">
+        <div class="cert-card" style="background:linear-gradient(135deg,#94A3B8,#475569);">
+          <div class="cert-medal" aria-hidden="true">🥈</div>
+          <div class="cert-title cert-card__title">Silver Medal Certificate</div>
+          <div class="cert-subtitle">International Essay Writing Competition</div>
+          <div class="cert-year">2023</div>
+          <div class="cert-seal" aria-hidden="true">✍️</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Young Scientist Award Certificate 2024" data-caption="Young Scientist Award Certificate — National Top 20 Finalist 2024">
+        <div class="cert-card" style="background:linear-gradient(135deg,#10B981,#06B6D4);">
+          <div class="cert-medal" aria-hidden="true">🔬</div>
+          <div class="cert-title cert-card__title">Young Scientist Award</div>
+          <div class="cert-subtitle">National Top 20 Finalist</div>
+          <div class="cert-year">2024</div>
+          <div class="cert-seal" aria-hidden="true">🧪</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Bronze Medal — International Student Speaker Competition 2023" data-caption="Bronze Medal — International Student Speaker Competition 2023">
+        <div class="cert-card" style="background:linear-gradient(135deg,#D97706,#92400E);">
+          <div class="cert-medal" aria-hidden="true">🥉</div>
+          <div class="cert-title cert-card__title">Bronze Medal</div>
+          <div class="cert-subtitle">International Student Speaker Competition</div>
+          <div class="cert-year">2023</div>
+          <div class="cert-seal" aria-hidden="true">🎤</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Abacus Level 5 Completion Certificate" data-caption="Abacus Level 5 Completion Certificate — GEMMA Abacus Club">
+        <div class="cert-card" style="background:linear-gradient(135deg,#3D3BF3,#7C3AED);">
+          <div class="cert-medal" aria-hidden="true">🧮</div>
+          <div class="cert-title cert-card__title">Level 5 Completion</div>
+          <div class="cert-subtitle">GEMMA Abacus Club — Highest Certification</div>
+          <div class="cert-year">2024</div>
+          <div class="cert-seal" aria-hidden="true">⭐</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Mathematics Club Inter-School Champion Certificate" data-caption="Mathematics Club Inter-School Champion Certificate 2024">
+        <div class="cert-card" style="background:linear-gradient(135deg,#7C3AED,#3D3BF3);">
+          <div class="cert-medal" aria-hidden="true">📐</div>
+          <div class="cert-title cert-card__title">Inter-School Champion</div>
+          <div class="cert-subtitle">Mathematics Club Quiz Competition</div>
+          <div class="cert-year">2024</div>
+          <div class="cert-seal" aria-hidden="true">🏅</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="School Innovation Award — Smart Irrigation System 2024" data-caption="School Innovation Award — Smart Irrigation System Project 2024">
+        <div class="cert-card" style="background:linear-gradient(135deg,#06B6D4,#10B981);">
+          <div class="cert-medal" aria-hidden="true">💡</div>
+          <div class="cert-title cert-card__title">School Innovation Award</div>
+          <div class="cert-subtitle">Smart Irrigation System Project</div>
+          <div class="cert-year">2024</div>
+          <div class="cert-seal" aria-hidden="true">🌱</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+      <div class="gallery-item" role="listitem" tabindex="0" aria-label="Coding Club Participation Certificate" data-caption="Coding Club Participation Certificate — GEMMA Coding Club 2023">
+        <div class="cert-card" style="background:linear-gradient(135deg,#1A1A2E,#3D3BF3);">
+          <div class="cert-medal" aria-hidden="true">💻</div>
+          <div class="cert-title cert-card__title">Coding Club Certificate</div>
+          <div class="cert-subtitle">GEMMA Coding Club — Active Participant</div>
+          <div class="cert-year">2023</div>
+          <div class="cert-seal" aria-hidden="true">⌨️</div>
+        </div>
+        <div class="gallery-overlay" aria-hidden="true">
+          <span class="gallery-overlay-text">🔍 Click to view</span>
+        </div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SKILLS SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section section-alt" id="skills" aria-label="Skills">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">⚡ Skills</div>
+      <h2>Skills &amp; Competencies</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">A blend of academic, technical, and interpersonal skills — continuously growing.</p>
+    </header>
+
+    <div class="skills-layout">
+      <!-- Academic + Technical Skills -->
+      <div>
+        <div class="skills-group animate-on-scroll">
+          <h3>📚 Academic Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Mental Math</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Mental Math skill: 95%">
+                <div class="skill-fill skill-bar-fill" data-value="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Logical Reasoning</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill skill-bar-fill" data-value="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill skill-bar-fill" data-value="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Scientific Analysis</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-fill skill-bar-fill" data-value="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group animate-on-scroll" style="margin-top:var(--sp-xl)">
+          <h3>💻 Technical Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Scratch Programming</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill skill-bar-fill" data-value="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">MS Office / PowerPoint</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill skill-bar-fill" data-value="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Canva &amp; Design Tools</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill skill-bar-fill" data-value="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML &amp; CSS</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill skill-bar-fill" data-value="70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Arduino / IoT Basics</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill skill-bar-fill" data-value="65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="animate-on-scroll">
+        <div class="skills-group">
+          <h3>🌟 Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-card">
+              <span class="soft-skill-icon" aria-hidden="true">🏅</span>
+              <span class="soft-skill-name">Leadership</span>
+            </div>
+            <div class="soft-skill-card">
+              <span class="soft-skill-icon" aria-hidden="true">🤝</span>
+              <span class="soft-skill-name">Teamwork</span>
+            </div>
+            <div class="soft-skill-card">
+              <span class="soft-skill-icon" aria-hidden="true">🎤</span>
+              <span class="soft-skill-name">Public Speaking</span>
+            </div>
+            <div class="soft-skill-card">
+              <span class="soft-skill-icon" aria-hidden="true">💡</span>
+              <span class="soft-skill-name">Creativity</span>
+            </div>
+            <div class="soft-skill-card">
+              <span class="soft-skill-icon" aria-hidden="true">⏰</span>
+              <span class="soft-skill-name">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     BLOG SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="blog" aria-label="Student Blog">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">✍️ Blog</div>
+      <h2>My Thoughts &amp; Stories — Blog</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Writing about the journeys that shaped me — from abacus beads to international stages.</p>
+    </header>
+
+    <div class="grid-3 blog-grid" role="list">
+
+      <!-- Post 1 -->
+      <article class="blog-card animate-on-scroll" role="listitem">
+        <img
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80"
+          alt="Student studying mathematics with abacus"
+          class="blog-thumbnail"
+          width="800"
+          height="200"
+          loading="lazy"
+        />
+        <div class="blog-body">
+          <div class="blog-meta blog-card__meta">
+            <span class="badge badge-primary">Abacus</span>
+            <span class="blog-meta-dot">·</span>
+            <span>November 12, 2024</span>
+            <span class="blog-meta-dot">·</span>
+            <span>4 min read</span>
+          </div>
+          <h3 class="blog-title blog-card__title">How Abacus Improved My Mental Math Skills</h3>
+          <p class="blog-excerpt">When I first started learning abacus at age 10, I could barely do two-digit multiplication in my head. The beads looked confusing, the movements seemed impossible to memorise. But my instructor at the GEMMA Abacus Club had a saying: "Trust the beads, they will trust you back."</p>
+
+          <div class="blog-author">
+            <div class="author-avatar" aria-hidden="true">AS</div>
+            <div>
+              <div class="author-name">Aarav Sharma</div>
+              <div style="font-size:var(--text-caption);color:var(--color-text-muted);">Grade 8 · GEMMA Student</div>
+            </div>
+          </div>
+
+          <!-- Expandable Full Post -->
+          <details style="margin-top:var(--sp-md);">
+            <summary class="blog-read-more" style="cursor:pointer;list-style:none;">
+              Read Full Post →
+            </summary>
+            <div style="margin-top:var(--sp-md);font-size:var(--text-sm);line-height:1.8;color:var(--color-text-secondary);">
+              <p>Three years later, I won a Gold Medal at the International Abacus Olympiad — and I can multiply four-digit numbers in my head faster than most adults can reach for a calculator. Here's how that transformation happened.</p>
+              <br/>
+              <p>The abacus is more than a counting tool. It's a mental gymnasium. When you move the beads, you're not just calculating — you're training your brain to visualise numbers as physical objects. Over time, the physical abacus disappears, and you carry an invisible one in your mind. This is called the "mental abacus" technique, and it's what elite abacus students use in competitions.</p>
+              <br/>
+              <p>My training involved 30 minutes of daily practice — adding columns of 10 numbers, multiplying, dividing, all on the beads. It was repetitive, sometimes boring, but the results were undeniable. By the end of my first year, my mental arithmetic speed had doubled. By the end of year two, I was competing at the state level.</p>
+              <br/>
+              <p>The most surprising benefit wasn't speed — it was <em>confidence</em>. Knowing I could solve complex calculations instantly made me fearless in mathematics class. I stopped dreading exams and started enjoying them. My class rank improved significantly, and I began helping classmates understand concepts that had once confused me.</p>
+              <br/>
+              <p>For students considering abacus training: start early, be patient, and trust the process. The beads won't let you down. And one day, when you're standing on a stage with a gold medal around your neck, you'll understand exactly why it was worth every single practice session.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card animate-on-scroll" role="listitem">
+        <img
+          src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80"
+          alt="Public speaking competition on stage"
+          class="blog-thumbnail"
+          width="800"
+          height="200"
+          loading="lazy"
+        />
+        <div class="blog-body">
+          <div class="blog-meta blog-card__meta">
+            <span class="badge badge-bronze">Competition</span>
+            <span class="blog-meta-dot">·</span>
+            <span>September 3, 2023</span>
+            <span class="blog-meta-dot">·</span>
+            <span>5 min read</span>
+          </div>
+          <h3 class="blog-title blog-card__title">My Experience at the International Student Speaker Competition</h3>
+          <p class="blog-excerpt">Standing on stage in front of 200 people from 14 countries, I realised that preparation is everything. My hands were trembling, my heart was racing — but the moment I spoke my first sentence, something clicked.</p>
+
+          <div class="blog-author">
+            <div class="author-avatar" aria-hidden="true">AS</div>
+            <div>
+              <div class="author-name">Aarav Sharma</div>
+              <div style="font-size:var(--text-caption);color:var(--color-text-muted);">Grade 8 · GEMMA Student</div>
+            </div>
+          </div>
+
+          <details style="margin-top:var(--sp-md);">
+            <summary class="blog-read-more" style="cursor:pointer;list-style:none;">
+              Read Full Post →
+            </summary>
+            <div style="margin-top:var(--sp-md);font-size:var(--text-sm);line-height:1.8;color:var(--color-text-secondary);">
+              <p>I had spent three months preparing for this competition. My topic was climate change — a subject I had studied deeply through my Science Club and the Climate Change Awareness Website I had built. But knowing the content and delivering it confidently are two very different skills.</p>
+              <br/>
+              <p>My preparation involved writing and rewriting my speech seven times. Each draft was cleaner, more impactful. My Public Speaking Club mentor, Mrs. Kapoor, pushed me to stop memorising words and start owning the message. "Speak from what you feel, not what you've written," she told me. That advice changed everything.</p>
+              <br/>
+              <p>On competition day, I arrived early and watched the other participants rehearse. Students from the UK, Australia, Singapore, USA — all confident, polished, with years of drama training behind them. I felt like an imposter. But then I remembered: I had something they didn't. I had lived through Delhi's pollution, I had seen the Yamuna river shrink year after year. My speech was not just information — it was personal.</p>
+              <br/>
+              <p>When I walked onto the stage, I paused for three seconds before speaking — just as I had practised. That pause centred me. I delivered my six-minute speech on climate change and its impact on India's agricultural communities, using three stories I had personally researched.</p>
+              <br/>
+              <p>The Bronze Medal was not what I expected. But the experience of standing on that international stage, representing my school and my country, was worth a thousand gold medals. I came home not with just a certificate, but with a voice — and the confidence to use it.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card animate-on-scroll" role="listitem">
+        <img
+          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80"
+          alt="Student learning to code on computer"
+          class="blog-thumbnail"
+          width="800"
+          height="200"
+          loading="lazy"
+        />
+        <div class="blog-body">
+          <div class="blog-meta blog-card__meta">
+            <span class="badge badge-accent">Coding</span>
+            <span class="blog-meta-dot">·</span>
+            <span>January 20, 2024</span>
+            <span class="blog-meta-dot">·</span>
+            <span>4 min read</span>
+          </div>
+          <h3 class="blog-title blog-card__title">Why Every Student Should Learn to Code</h3>
+          <p class="blog-excerpt">My coding journey started with Scratch when I was 11. I wanted to make a game — and that simple desire changed how I think about everything. Learning to code is one of the most valuable skills for future careers in technology, engineering, and innovation.</p>
+
+          <div class="blog-author">
+            <div class="author-avatar" aria-hidden="true">AS</div>
+            <div>
+              <div class="author-name">Aarav Sharma</div>
+              <div style="font-size:var(--text-caption);color:var(--color-text-muted);">Grade 8 · GEMMA Student</div>
+            </div>
+          </div>
+
+          <details style="margin-top:var(--sp-md);">
+            <summary class="blog-read-more" style="cursor:pointer;list-style:none;">
+              Read Full Post →
+            </summary>
+            <div style="margin-top:var(--sp-md);font-size:var(--text-sm);line-height:1.8;color:var(--color-text-secondary);">
+              <p>I remember staring at the Scratch editor for the first time, completely overwhelmed. There were so many blocks — motion, sound, events, control. Where do you even begin? I clicked "when green flag clicked" and dragged a "move 10 steps" block underneath it. The sprite moved. And just like that, I was hooked.</p>
+              <br/>
+              <p>Coding teaches you something that no other subject does: how to break a complex problem into tiny, solvable steps. When my game character kept falling through the floor, I didn't panic — I debugged. I tested one thing at a time, methodically, until I found the collision detection error. This kind of systematic thinking has transformed how I approach every problem, from mathematics proofs to science experiments.</p>
+              <br/>
+              <p>But the benefits go far deeper than problem-solving. Coding gives you <em>agency</em> — the power to build things that didn't exist before. When I completed Temple Adventure and published it on Scratch, and then saw "200 plays" next to my name, I felt a pride that no exam mark had ever given me. Real people, from real places, were playing something I had created. That feeling is irreplaceable.</p>
+              <br/>
+              <p>For students who think coding is too hard or "only for computer people" — please, give it one week with Scratch. It's free, it's visual, and it's designed for learners. You won't become a software engineer overnight, but you will start seeing the world differently. You'll look at apps and websites and think, "How did they build that?" — and then you'll realise you can find out.</p>
+              <br/>
+              <p>In a world increasingly driven by technology, coding is not just a skill — it's a language. And every student deserves to speak it.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+
+    </div><!-- /grid -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="testimonials" aria-label="Testimonials" style="background:linear-gradient(180deg,#EEF2FF 0%,#F5F3FF 100%);">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">💬 Testimonials</div>
+      <h2>What They Say</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Voices from the people who've watched Aarav grow into a young leader.</p>
+    </header>
+
+    <div class="grid-3" role="list">
+
+      <!-- Teacher -->
+      <div class="testimonial-card animate-on-scroll" role="listitem">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-quote">
+          "Aarav consistently demonstrates curiosity, discipline, and leadership in every academic and extracurricular activity. He approaches every challenge with a scientific mindset and an eagerness to learn that is truly inspiring."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-initials" aria-hidden="true">PN</div>
+          <div class="author-info">
+            <div class="author-full-name">Mrs. Priya Nair</div>
+            <div class="author-title">Class Teacher &amp; Science Coordinator, Sunrise International School</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parent -->
+      <div class="testimonial-card animate-on-scroll" role="listitem">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-quote">
+          "The GEMMA Clubs have significantly improved Aarav's confidence, problem-solving abilities, and communication skills. Watching him compete internationally and represent his school has been a source of immense pride for our family."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-initials" aria-hidden="true">RS</div>
+          <div class="author-info">
+            <div class="author-full-name">Mr. Rajesh Sharma</div>
+            <div class="author-title">Parent</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Club Coordinator -->
+      <div class="testimonial-card animate-on-scroll" role="listitem">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-quote">
+          "In two years, Aarav has grown from a shy participant to one of our most confident leaders. His dedication to abacus and coding sets a benchmark for other students. He is the kind of learner every educator dreams of."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-initials" aria-hidden="true">AM</div>
+          <div class="author-info">
+            <div class="author-full-name">Mr. Anil Mehta</div>
+            <div class="author-title">GEMMA Club Coordinator</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════════════════════════ -->
+<section class="section" id="contact" aria-label="Contact Aarav Sharma">
+  <div class="container">
+    <header class="section-header animate-on-scroll">
+      <div class="section-prelabel">📬 Contact</div>
+      <h2>Contact — Get in Touch</h2>
+      <div class="section-underline" aria-hidden="true"></div>
+      <p class="section-subtitle">Questions, collaborations, or just want to say hello? I'd love to hear from you.</p>
+    </header>
+
+    <div class="contact-grid">
+      <!-- Form -->
+      <div class="contact-form-card animate-from-left">
+        <h3 style="margin-bottom:var(--sp-lg);">Send a Message</h3>
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="contact-name">Full Name *</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" required autocomplete="name" />
+            <span class="form-error" id="contact-name-error">Please enter your name.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email Address *</label>
+            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <span class="form-error" id="contact-email-error">Please enter a valid email.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">Subject *</label>
+            <select id="contact-subject" name="subject" required>
+              <option value="" disabled selected>Select a subject...</option>
+              <option value="general">General Inquiry</option>
+              <option value="school">School Collaboration</option>
+              <option value="club">Club Query</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="form-error" id="contact-subject-error">Please select a subject.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" placeholder="Write your message here... (minimum 20 characters)" required minlength="20" rows="4"></textarea>
+            <span class="form-error" id="contact-message-error">Please enter a message (at least 20 characters).</span>
+          </div>
+
+          <button type="submit" class="submit-btn" id="contact-submit-btn">
+            Send Message →
+          </button>
+        </form>
+      </div>
+
+      <!-- Info Panel -->
+      <div class="contact-info animate-from-right">
+        <h3 style="margin-bottom:var(--sp-md);">Contact Info</h3>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div style="flex:1">
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value">aarav.sharma@gemmaclub.in</div>
+          </div>
+          <button class="copy-btn" id="copy-email" aria-label="Copy email address">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-value">New Delhi, India 🇮🇳</div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">School</div>
+            <div class="contact-info-value">Sunrise International School</div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:var(--text-sm);font-weight:500;color:var(--color-text-primary);margin-bottom:var(--sp-md);">Follow on Social Media</p>
+          <div class="social-icons-row">
+            <a href="https://linkedin.com/in/aarav-sharma-student" class="social-circle social-link" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-circle social-link" aria-label="Instagram profile" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-circle social-link" aria-label="YouTube channel" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:var(--sp-md);">
+          <div class="logo-monogram" aria-hidden="true">AS</div>
+          <span class="logo-name">Aarav Sharma</span>
+        </div>
+        <p>Grade 8 GEMMA Club Student · International medal winner · Future Aerospace Engineer. Building skills one competition at a time.</p>
+        <div class="footer-socials" style="margin-top:var(--sp-md)">
+          <a href="https://linkedin.com/in/aarav-sharma-student" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#about">My Story</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#clubs">GEMMA Clubs</a></li>
+          <li><a href="#skills">My Skills</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Achievements</h4>
+        <ul>
+          <li><a href="#achievements">Competitions</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Certificates</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#blog">Read My Blog</a></li>
+          <li><a href="#contact">Send a Message</a></li>
+          <li><a href="https://linkedin.com/in/aarav-sharma-student" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="assets/aarav-sharma-cv.pdf" download>Download CV</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Aarav Sharma © 2024 &nbsp;·&nbsp; Built with passion and GEMMA spirit 🚀 &nbsp;·&nbsp; Sunrise International School, New Delhi</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Container -->
+<div id="toast" class="toast toast-success" role="alert" aria-live="polite">
+  <span class="toast-icon">✅</span>
+  <span class="toast-text"></span>
+</div>
+
+<!-- JS -->
+<script src="js/main.js" defer></script>
+</body>
+</html>

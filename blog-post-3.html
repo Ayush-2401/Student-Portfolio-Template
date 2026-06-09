@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Why Coding is Important for Future Careers — Aarav Sharma</title>
+  <meta name='description' content='Aarav Sharma explains why coding is the most valuable skill a student can learn, drawing from his Scratch and web development journey.' />
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&family=Lora:ital@1&family=JetBrains+Mono&display=swap' rel='stylesheet' />
+  <script src='https://unpkg.com/lucide@latest/dist/umd/lucide.min.js' defer></script>
+  <link rel='stylesheet' href='css/design-tokens.css' />
+  <link rel='stylesheet' href='css/base.css' />
+  <link rel='stylesheet' href='css/animations.css' />
+  <link rel='stylesheet' href='css/components.css' />
+  <link rel='stylesheet' href='css/sections.css' />
+  <link rel='stylesheet' href='css/dark-mode.css' />
+  <style>
+    .blog-post { max-width: 760px; margin: 0 auto; padding: 0 var(--container-pad); }
+    .blog-post__cover { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: var(--space-xl); }
+    .blog-post__title { font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--color-text); line-height: 1.2; margin-bottom: 16px; }
+    .blog-post__meta { display: flex; align-items: center; gap: 16px; font-size: 14px; color: var(--color-text-muted); margin-bottom: 32px; flex-wrap: wrap; }
+    .blog-post__body p { font-size: 17px; line-height: 1.85; color: var(--color-text-secondary); margin-bottom: 20px; }
+    .blog-post__body h2 { font-family: var(--font-display); font-size: 1.375rem; font-weight: 600; color: var(--color-text); margin: 36px 0 12px; }
+    .blog-post__body blockquote { border-left: 4px solid var(--color-primary); padding: 16px 24px; background: var(--color-surface-alt); border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 28px 0; }
+    .blog-post__body blockquote p { font-family: var(--font-serif); font-style: italic; font-size: 18px; color: var(--color-text); margin: 0; }
+    .blog-post-nav { display: flex; justify-content: space-between; margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border); }
+  </style>
+</head>
+<body>
+<nav class='navbar' id='navbar'>
+  <div class='navbar__inner'>
+    <a href='index.html' class='navbar__logo'><div class='logo-monogram'>AS</div><span>Aarav Sharma</span></a>
+    <ul class='navbar__links'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='index.html#about'>About</a></li>
+      <li><a href='blog.html' class='active'>Blog</a></li>
+      <li><a href='index.html#contact'>Contact</a></li>
+    </ul>
+    <div class='navbar__actions'>
+      <button class='theme-toggle' id='theme-toggle' aria-label='Toggle dark mode'>
+        <i data-lucide='moon' class='icon-moon' style='width:18px;height:18px'></i>
+        <i data-lucide='sun' class='icon-sun' style='width:18px;height:18px'></i>
+      </button>
+    </div>
+  </div>
+</nav>
+<main style='padding: var(--space-2xl) 0 var(--space-3xl)'>
+  <div class='blog-post'>
+    <div style='margin-bottom: 24px'>
+      <a href='blog.html' style='display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--color-text-secondary)'>
+        <i data-lucide='arrow-left' style='width:16px;height:16px'></i> Back to Blog
+      </a>
+    </div>
+    <span class='badge badge-accent' style='margin-bottom:16px;display:inline-flex'>Coding</span>
+    <h1 class='blog-post__title'>Why Coding is Important for Future Careers</h1>
+    <div class='blog-post__meta'>
+      <div style='display:flex;align-items:center;gap:8px'>
+        <img src='https://ui-avatars.com/api/?name=Aarav+Sharma&size=32&background=3D3BF3&color=fff&bold=true&rounded=true' alt='Aarav Sharma' style='width:32px;height:32px;border-radius:50%' />
+        <span style='font-weight:600;color:var(--color-text)'>Aarav Sharma</span>
+      </div>
+      <span>January 20, 2024</span><span>·</span><span>4 min read</span>
+    </div>
+    <img class='blog-post__cover' src='https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&q=85' alt='Student learning to code on a computer' loading='eager' onerror="this.style.background='linear-gradient(135deg,#06B6D4,#3D3BF3)';this.src=''" />
+    <div class='blog-post__body'>
+      <p>My coding journey started with Scratch when I was 11. I wanted to make a game — a platformer where a character jumps over obstacles. That simple desire changed how I think about problems, creativity, and the future. Two years later, I have built five Scratch projects, a 5-page HTML website, an Arduino-based irrigation system, and this very portfolio site.</p>
+      <p>I am not writing this to brag. I am writing this because I genuinely believe that coding is the single most valuable skill a student can learn in 2024 — not because everyone will become a software engineer, but because programming teaches you to think differently. Better.</p>
+      <h2>Coding Teaches You to Break Down Problems</h2>
+      <p>In Scratch, when I was building Temple Adventure (my 3-level platformer game), I faced a bug: the character would sometimes fall through the floor. My initial reaction was frustration. Then I started thinking like a programmer — which means thinking in steps.</p>
+      <p>Is the floor detection running? Yes. Is the hitbox correct? Yes. Is it happening at a specific frame rate? Oh. That was it. A timing issue. I had never thought about frame rate in my life before that moment. Debugging that game taught me more problem-solving than any textbook chapter on logic ever has.</p>
+      <blockquote><p>"Coding does not teach you to talk to computers. It teaches you to talk to yourself — clearly, logically, one step at a time."</p></blockquote>
+      <h2>You Do Not Need to Be a Math Genius</h2>
+      <p>One of the biggest myths about coding is that you need to be brilliant at mathematics. You do not. You need to be curious and patient. Scratch is the perfect starting point because it uses visual blocks instead of text. Within an hour of starting Scratch, I had a sprite moving across the screen. That feeling of making something happen is incredibly powerful.</p>
+      <h2>Coding is a Superpower for Every Subject</h2>
+      <p>When I was creating my Climate Change Awareness Website for the school environment project, writing the quiz logic in JavaScript made me think about conditional reasoning — which directly helped me in my Science chapter on the scientific method. The skills cross-pollinate constantly.</p>
+      <p>For my Smart Irrigation System, I wrote C++ code for Arduino. Understanding variables, loops, and conditionals in a physical device — watching a motor turn on when soil moisture dropped below a threshold — made abstract programming concepts completely real and meaningful.</p>
+      <h2>Where to Start</h2>
+      <p>If you are a complete beginner, start with Scratch at scratch.mit.edu. It is free, visual, and you can make something cool in your first hour. Once comfortable, try HTML and CSS — the building blocks of every website. Then explore Python, which reads almost like English.</p>
+      <p>The most important thing: build something you actually care about. The frustration of debugging your own creation is a hundred times more educational than perfectly executing someone else's example. Coding gave me my Gold Medal in abacus, my Bronze in speaking, and this portfolio you are reading right now. It is not a subject. It is a tool — and the most powerful one I own.</p>
+    </div>
+    <div class='blog-post-nav'>
+      <a href='blog-post-2.html' style='display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--color-primary)'>
+        <i data-lucide='arrow-left' style='width:16px;height:16px'></i> Previous Post
+      </a>
+      <a href='blog.html' style='display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--color-primary)'>
+        All Posts <i data-lucide='book-open' style='width:16px;height:16px'></i>
+      </a>
+    </div>
+  </div>
+</main>
+<footer class='footer'><div class='container'><div class='footer__bottom' style='padding:var(--space-lg) 0'><p>Aarav Sharma &copy; 2024 &middot; <a href='index.html' style='color:#6B7280'>Back to Portfolio</a></p></div></div></footer>
+<script src='js/main.js' defer></script>
+<script>document.addEventListener('DOMContentLoaded', () => { if (typeof lucide !== 'undefined') lucide.createIcons(); });</script>
+</body>
+</html>

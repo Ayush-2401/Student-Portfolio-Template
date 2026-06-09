@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Aarav Sharma | Student Portfolio</title>
+  <meta name="description" content="Aarav Sharma's blog — thoughts on abacus, competitions, coding, and life as a GEMMA Club student." />
+
+  <!-- Preload Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&family=Lora:ital@1&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+
+  <!-- CSS — use the same stack as index.html -->
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION — matches index.html exactly
+═══════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container navbar-inner">
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo" aria-label="Aarav Sharma Home">
+      <div class="logo-monogram" aria-hidden="true">AS</div>
+      <span class="logo-name">Aarav Sharma</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <div class="nav-links" role="list">
+      <a href="index.html#home"         class="nav-link" role="listitem">Home</a>
+      <a href="index.html#about"        class="nav-link" role="listitem">About</a>
+      <a href="index.html#academics"    class="nav-link" role="listitem">Academics</a>
+      <a href="index.html#achievements" class="nav-link" role="listitem">Achievements</a>
+      <a href="index.html#projects"     class="nav-link" role="listitem">Projects</a>
+      <a href="blog.html"               class="nav-link active" role="listitem">Blog</a>
+      <a href="index.html#contact"      class="nav-link" role="listitem">Contact</a>
+    </div>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="assets/aarav-sharma-cv.pdf" class="btn btn-outline btn-sm" download aria-label="Download CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+  <a href="index.html#home"         class="nav-link">Home</a>
+  <a href="index.html#about"        class="nav-link">About</a>
+  <a href="index.html#academics"    class="nav-link">Academics</a>
+  <a href="index.html#achievements" class="nav-link">Achievements</a>
+  <a href="index.html#projects"     class="nav-link">Projects</a>
+  <a href="blog.html"               class="nav-link">Blog</a>
+  <a href="index.html#contact"      class="nav-link">Contact</a>
+  <a href="assets/aarav-sharma-cv.pdf" class="btn btn-primary" download>Download CV</a>
+</div>
+
+<main>
+  <!-- Blog Page Hero -->
+  <section class="section section-alt" style="padding: 80px 0 60px; border-bottom: 1px solid var(--color-border);">
+    <div class="container" style="text-align:center;">
+      <div class="section-prelabel">✍️ My Thoughts</div>
+      <h1 style="font-size: var(--text-h2); font-weight: 700; margin: 16px 0 12px; color: var(--color-text-primary);">Aarav's Blog</h1>
+      <p style="color: var(--color-text-secondary); font-size: var(--text-body); max-width: 520px; margin: 0 auto; line-height: 1.7;">
+        Writing about abacus, competitions, coding, and life as a GEMMA Club student.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3" role="list">
+
+        <!-- Post 1: Abacus -->
+        <article class="blog-card animate-on-scroll" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80"
+            alt="Abacus beads for mental mathematics"
+            class="blog-thumbnail"
+            width="800"
+            height="200"
+            loading="lazy"
+          />
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="badge badge-primary">Abacus</span>
+              <span class="blog-meta-dot">·</span>
+              <span>November 12, 2024</span>
+              <span class="blog-meta-dot">·</span>
+              <span>4 min read</span>
+            </div>
+            <h2 class="blog-title">How Abacus Improved My Mental Math Skills</h2>
+            <p class="blog-excerpt">
+              When I first started learning abacus at age 10, I could barely do two-digit multiplication in my head.
+              Fast forward three years, and I can calculate five-digit additions in under 2 seconds...
+            </p>
+            <a href="blog-post-1.html" class="blog-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 2: Speaker Competition -->
+        <article class="blog-card animate-on-scroll" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80"
+            alt="Student speaking on stage at international competition"
+            class="blog-thumbnail"
+            width="800"
+            height="200"
+            loading="lazy"
+          />
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="badge badge-bronze">Competition</span>
+              <span class="blog-meta-dot">·</span>
+              <span>September 3, 2023</span>
+              <span class="blog-meta-dot">·</span>
+              <span>5 min read</span>
+            </div>
+            <h2 class="blog-title">My Experience at the International Student Speaker Competition</h2>
+            <p class="blog-excerpt">
+              Standing on stage in front of 200 people from 14 countries, I realised that preparation is everything.
+              The journey from a nervous 12-year-old to winning a Bronze at the international stage...
+            </p>
+            <a href="blog-post-2.html" class="blog-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 3: Coding for Future Careers -->
+        <article class="blog-card animate-on-scroll" role="listitem">
+          <img
+            src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=80"
+            alt="Student learning to code on computer"
+            class="blog-thumbnail"
+            width="800"
+            height="200"
+            loading="lazy"
+          />
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="badge badge-accent">Coding</span>
+              <span class="blog-meta-dot">·</span>
+              <span>January 20, 2024</span>
+              <span class="blog-meta-dot">·</span>
+              <span>4 min read</span>
+            </div>
+            <h2 class="blog-title">Why Coding is Important for Future Careers</h2>
+            <p class="blog-excerpt">
+              My coding journey started with Scratch when I was 11. I wanted to make a game — and that simple desire
+              changed how I think about problems, creativity, and the future...
+            </p>
+            <a href="blog-post-3.html" class="blog-read-more">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-bottom" style="padding: var(--sp-lg) 0; text-align: center;">
+      <p>Aarav Sharma © 2024 &nbsp;·&nbsp; <a href="index.html" style="color: var(--color-text-muted);">← Back to Portfolio</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Container -->
+<div id="toast" class="toast toast-success" role="alert" aria-live="polite">
+  <span class="toast-icon">✅</span>
+  <span class="toast-text"></span>
+</div>
+
+<!-- JS — same as index.html -->
+<script src="js/main.js" defer></script>
+</body>
+</html>
